@@ -44,7 +44,7 @@ under the License.
 
     <request-map uri="createUserDemo">
         <security https="true" auth="true"/>
-        <event type="service" invoke="createUserDemo"/>
+        <event type="service" invoke="createUserDemoByJavaService"/>
         <response name="success" type="view" value="main"></response>
     </request-map>
     

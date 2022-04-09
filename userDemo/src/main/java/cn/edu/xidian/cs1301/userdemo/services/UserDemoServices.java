@@ -31,7 +31,7 @@ public class UserDemoServices {
             // 在数据库中创建记录(insert)
             userDemo = delegator.create(userDemo);
             result.put("userDemoId", userDemo.getString("userDemoId"));
-            Debug.log("成功创建UserDemo， id=： {}", userDemo.getString("userDemoId"));
+            Debug.log("========Create UserDemo Successfully, id=" + userDemo.getString("userDemoId"));
         } catch (GenericEntityException e) {
             Debug.logError(e, MODULE);
             return ServiceUtil.returnError("Error in creating record in UserDemo Entity......" + MODULE);
