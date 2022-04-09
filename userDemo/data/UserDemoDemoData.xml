@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
+-->
+
+<entity-engine-xml>
+    <UserDemo userDemoId="USER_DEMO_1" userDemoTypeId="USER_DEMO_TYPE_1" username="teacher111" password="123456" age="39" telephone="18080267866"/>
+    <UserDemo userDemoId="USER_DEMO_2" userDemoTypeId="USER_DEMO_TYPE_2" username="student222" password="123456" age="24" telephone="13388110901"/>
+</entity-engine-xml>
+
+
+
+<!--<entity entity-name="UserDemo" package-name="org.apache.ofbiz.userdemo" title="User Demo Entity">-->
+<!--<field name="userDemoId" type="id"/>-->
+<!--<field name="userDemoTypeId" type="id"/>-->
+<!--<field name="username" type="name"/>-->
+<!--<field name="password" type="short-varchar"/>-->
+<!--<field name="age" type="integer"/>-->
+<!--<field name="telephone" type="tel-number"/>-->
+<!--<prim-key field="userDemoId"/>-->
+<!--<relation type="one" fk-name="USER_DEMO_TYPE_ID" rel-entity-name="UserDemoType">-->
+<!--    <key-map field-name="userDemoTypeId"/>-->
+<!--</relation>-->
+<!--</entity>-->
