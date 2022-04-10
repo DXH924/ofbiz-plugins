@@ -25,7 +25,7 @@ under the License.
     <version>1.0</version>
 
 <!--    使用默认引擎  -->
-    <service name="createUserDemo" default-entity-name="UserDemo" engine="entity-auto" invoke="create" auth="true">
+    <service name="createUserDemo" default-entity-name="UserDemo" engine="entity-auto" invoke="create" auth="true" >
         <description>Create a UserDemo Record In Database</description>
         <auto-attributes include="pk" mode="OUT" optional="false"/>
         <auto-attributes include="nonpk" mode="IN" optional="false"/>
@@ -33,7 +33,7 @@ under the License.
     </service>
 
 <!--    使用java引擎，自定义服务  -->
-    <service name="createUserDemoByJavaService" default-entity-name="UserDemo" engine="java" location="cn.edu.xidian.cs1301.userdemo.services.UserDemoServices" invoke="createUserDemo" auth="true">
+    <service name="createUserDemoByJavaService" default-entity-name="UserDemo" engine="java" location="cn.edu.xidian.cs1301.userdemo.services.UserDemoServices" invoke="createUserDemo" auth="true" export="true" action="POST">
         <description>Create a User Demo using a service in Java</description>
         <auto-attributes include="pk" mode="OUT" optional="false"/>
         <auto-attributes include="nonpk" mode="IN" optional="false"/>
